@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="box box-head">
+        <p class="lorem">Lorem ipsum dolor sit amet</p>
+        <p class="lorem">Lorem ipsum dolor sit amet</p>
+        <p class="lorem">Lorem ipsum dolor sit amet</p>
+        <p class="lorem">Lorem ipsum dolor sit amet</p>
+        <p class="lorem">Lorem ipsum dolor sit amet</p>
+    </div>
+
+    <div class="buttons">
+        <button type="button" class="btn btn-edit" name="edit">edit</button>
+        <button type="button" class="btn btn-style" name="style">style</button>
+    </div>
+
+    <div class="box box-foot">
+        <form name="f1" class="f1">
+            <textarea name="area" id="txt" cols="80" rows="10">
+                </textarea>
+            <button type="button" class="btn btn-create-element">add</button>
+            <button type="button" class="btn btn-save">save</button>
+        </form>
+        <form name="f2" class="f2">
+            <p class="pStyle">Font Size</p>
+            <div class="qwerty">
+                <label for="twlw">
+                    <input type="radio" value="12px" id="twlw" name="fontsize">12px
+                </label>
+                <label for="frtn">
+                    <input type="radio" value="14px" id="frtn" name="fontsize" checked>14px
+                </label>
+                <label for="sxtn">
+                    <input type="radio" value="16px" id="sxtn" name="fontsize">16px
+                </label>
+                <label for="eightn">
+                    <input type="radio" value="18px" id="eightn" name="fontsize">18px
+                </label>
+                <label for="twnt">
+                    <input type="radio" value="20px" id="twnt" name="fontsize">20px
+                </label>
+
+            </div>
+            <p class="pStyle-fonts">Font Family:</p>
+            <select name="font-family" id="ff">
+                <option value="cursive">cursive</option>
+                <option value="fantasy">fantasy</option>
+                <option value="monospace">monospace</option>
+                <option value="sens-serif">sens-serif</option>
+            </select>
+            <p class="pStyle-colors">Colors</p>
+            <button type="button" name="txt-color" class="txt-color">Color of text</button>
+            <button type="button" name="bckg-color" class="bckg-color">Background Color</button>
+            <p class="pStyle-styles">Style</p>
+            <div class="qqq">
+                <label for="bld">
+                    <input type="checkbox" name="bold" value="bold" id="bld">Bold text
+                </label>
+                <label for="itl">
+                    <input type="checkbox" name="italic" value="italic" id="itl">Cursive text
+                </label>
+            </div>
+
+        </form>
+        <div class="colors">
+            <div class="rows high-row">
+                <div class="color box-red"></div>
+                <div class="color box-green"></div>
+                <div class="color box-blue"></div>
+            </div>
+            <div class="rows mid-row">
+                <div class="color box-yellow"></div>
+                <div class="color box-purple"></div>
+                <div class="color box-grey"></div>
+            </div>
+            <div class="rows high-low">
+                <div class="color box-orange"></div>
+                <div class="color box-black"></div>
+                <div class="color box-white"></div>
+            </div>
+        </div>
+        <div class="background-colors">
+            <div class="rows high-row">
+                <div class="color box-red"></div>
+                <div class="color box-green"></div>
+                <div class="color box-blue"></div>
+            </div>
+            <div class="rows mid-row">
+                <div class="color box-yellow"></div>
+                <div class="color box-purple"></div>
+                <div class="color box-grey"></div>
+            </div>
+            <div class="rows high-low">
+                <div class="color box-orange"></div>
+                <div class="color box-black"></div>
+                <div class="color box-white"></div>
+            </div>
+        </div>
+    </div>
+    <div class="option">
+        <h2>Choose what you want</h2>
+        <div class="create-element-type">
+            <label for="create-table" class="create-element">
+                <input id="create-table" class="opt-radio" type="radio" value="table" name="option">
+                <span>Table</span>
+            </label>
+            <label for="create-list" class="create-element">
+                <input id="create-list" class="opt-radio" type="radio" value="list" name="option">
+                <span>List</span>
+            </label>
+        </div>
+        <form name="f3" class="f3">
+            <div class="count-tr">Count TR:
+                <input type="text" name="countTr" placeholder="Count TR" class="inp-class">
+            </div>
+            <table>
+                <div class="count-td">Count TD:
+                    <input type="text" name="countTd" placeholder="Count TD" class="inp-class">
+                </div>
+                <h3>Add style to your table</h3>
+                <div class="inp-wdt">Width of TD
+                    <input type="text" name="width" class="wdt" placeholder="Width of TD">
+                </div>
+                <div class="inp-hght">Height of TD
+                    <input type="text" name="height" class="hght" placeholder="Height of TD">
+                </div>
+                <div class="param">
+                    <div class="border">Width of border
+                        <input type="text" name="brdWidth" class="table-border" placeholder="Width">
+                    </div>
+                    <div class="type">Type of border
+                        <select name="brdType" id="brdr-type">
+                            <option value="solid">solid</option>
+                            <option value="normal">normal</option>
+                        </select>
+                    </div>
+                    <div class=" border-col">Color of border
+                        <select name="brdColor" id="border-color">
+                            <option value="black">black</option>
+                            <option value="greeen">greeen</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                        </select>
+                    </div>
+                </div>
+            </table>
+            <button type="button" class="create-table">Create Table</button>
+        </form>
+        <form name="f4" class="f4">
+            <div class="li">Count li:
+                <input type="text" name="cli" class="lishka" value="" placeholder="Count li">
+            </div>
+            <div class="makrs-type"> Type of Marks
+                <select name="tpm" id="asd">
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+            </div>
+            <button type="button" class="create-list">Create List</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0 20px 20px;
+}
+
+p {
+    margin: 0 0 20px 0;
+
+}
+
+.box {
+    width: 700px;
+    /* height: 250px; */
+    margin: 20px auto 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    background-color: #f4f4f4;
+}
+
+.box.box-head {
+    padding: 20px 0 20px 20px;
+
+}
+
+.box.box-head-none {
+    display: none;
+}
+
+.box.box-foot {
+    margin-top: 10px;
+    height: 250px;
+    display: flex;
+}
+
+.box.box-foot-none {
+    display: none;
+}
+
+.buttons {
+    margin: 0 600px;
+    width: 110px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-none {
+    display: none;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn.btn-edit {
+    background-color: rgb(255, 202, 57);
+    color: black;
+}
+
+.btn-edit-none {
+    display: none;
+}
+
+.btn.btn-style {
+    background-color: rgb(5, 180, 233);
+    color: white;
+}
+
+.btn-style-none {
+    display: none;
+}
+
+.f1 {
+    display: none;
+}
+
+.f1-block {
+    display: block;
+}
+
+textarea {
+    margin: 20px 40px 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 128, 0.664);
+    outline: none;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    resize: none;
+}
+
+.btn.btn-create-element {
+    background-color: rgb(255, 40, 40);
+    color: rgb(255, 255, 255);
+    margin: 0 0 0 40px;
+}
+
+.btn.btn-save {
+    background-color: rgb(6, 212, 126);
+    color: rgb(255, 255, 255);
+}
+
+.f2 {
+    display: none;
+}
+
+.f2-block {
+    display: block;
+}
+
+
+.pStyle {
+    margin: 20px 0 8px 20px;
+    font-size: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+
+.pStyle-fonts {
+    font-size: 12px;
+    margin: 12px 0 8px 20px;
+    font-weight: bold;
+}
+
+.pStyle-colors {
+    font-size: 12px;
+    margin: 12px 0 8px 20px;
+    font-weight: bold;
+}
+
+.pStyle-styles {
+    font-size: 12px;
+    margin: 12px 0 8px 20px;
+    font-weight: bold;
+}
+
+
+input {
+    margin-left: 20px;
+}
+
+select {
+    margin-left: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.txt-color {
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.bckg-color {
+    width: 140px;
+    height: 30px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 12px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.colors,
+.background-colors {
+    display: none;
+}
+
+.colors-block {
+    width: 150px;
+    height: 150px;
+    margin: 50px 100px;
+    display: block;
+}
+
+.rows {
+    display: flex;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+}
+
+.color.box-red {
+    background-color: red;
+}
+
+.color.box-green {
+    background-color: greenyellow;
+}
+
+.color.box-blue {
+    background-color: blue;
+}
+
+.color.box-yellow {
+    background-color: yellow;
+}
+
+.color.box-purple {
+    background-color: purple;
+}
+
+.color.box-grey {
+    background-color: grey;
+}
+
+.color.box-orange {
+    background-color: orange;
+}
+
+.color.box-black {
+    background-color: black;
+}
+
+.color.box-white {
+    background-color: white;
+}
+
+
+.option {
+    display: none;
+}
+
+.option-block {
+    width: 700px;
+    height: 200px;
+    margin: 20px auto 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.664);
+    background-color: #f4f4f4;
+    display: block;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.f3 {
+    display: none;
+}
+
+.f3-block {
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+.opt-radio {
+    /* margin: 0px 0px 15px; */
+    font-size: 12px;
+}
+
+.count-tr {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+}
+
+.count-td {
+    font-size: 12px;
+}
+
+.inp-class {
+    height: 30px;
+    width: 530px;
+    margin-left: 40px;
+    padding: 15px;
+}
+
+h3 {
+    margin: 15px 0 15px 0;
+}
+
+.inp-wdt {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.wdt {
+    width: 530px;
+    height: 30px;
+    margin-left: 32px;
+    padding: 15px;
+
+}
+
+.inp-hght {
+    font-size: 12px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+.hght {
+    width: 530px;
+    height: 30px;
+    margin-left: 29px;
+    padding: 15px;
+}
+
+
+.param {
+    display: flex;
+}
+
+.border {
+    font-size: 12px;
+
+}
+
+.table-border {
+    width: 80px;
+    height: 30px;
+    margin-left: 11px;
+    padding: 15px;
+}
+
+#brdr-type {
+    width: 80px;
+    height: 30px;
+    margin-left: 11px;
+    padding-left: 10px;
+}
+
+.type {
+    font-size: 12px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.type-border {
+    width: 80px;
+    height: 30px;
+    margin-left: 11px;
+}
+
+.border-col {
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+#border-color {
+    width: 80px;
+    height: 30px;
+    margin-left: 11px;
+    padding-left: 10px;
+}
+
+.f4 {
+    display: none;
+}
+
+.f4-block {
+    display: block;
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.lishka {
+    height: 30px;
+    width: 530px;
+    margin-left: 63px;
+    padding: 15px;
+}
+
+.typeOfMarks {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+#marks {
+    height: 30px;
+    width: 530px;
+    margin-left: 26px;
+    padding: 15px;
+}
+
+.create,
+.create-table,
+.create-list {
+    width: 100px;
+    height: 40px;
+    background-color: inherit;
+    border-radius: 5px;
+    background-color: rgb(12, 190, 86);
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+}
+
+
+.makrs-type {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#asd {
+    height: 30px;
+    width: 530px;
+    margin-left: 32px;
+    padding-left: 10px
+}
+
+/* table{
+
+} */
+
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.qwerty {
+    width: 350px;
+    height: 25px;
+    display: flex;
+    
+}
+
+.qqq {
+    width: 350px;
+    display: flex;
+}
+
+.create-element-type {
+    width: 350px;
+    display: flex;
+}
